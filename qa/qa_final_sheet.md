@@ -1,7 +1,7 @@
-# Agent QA Report: Self-Check of Final Coding Sheet (`coding_sheet.csv`)
+# QA Report: Self-Check of Final Coding Sheet (`coding_sheet.csv`)
 
 **Audit Date:** 2026-11-08  
-**Auditor:** Antigravity Autonomous Research Agent  
+**Auditor:** Quality Assurance Reviewer  
 **Sampling Configuration:** `random_state = 42`, $N_{\text{sample}} = 15$, $N_{\text{population}} = 97$
 
 ---

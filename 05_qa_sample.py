@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Stage 5: Agent QA Qualitative Self-Review Tool (Section 9 of Spec).
+"""Stage 5: QA Qualitative Self-Review Tool (Section 9 of Spec).
 
 Draws a fixed-seed sample (seed 42, n=20), inspects the source first, scores against
 the rubric (2 / 1 / 0), logs reasons for every score below 2, builds a failure taxonomy,
@@ -64,7 +64,7 @@ def qa_collection(source_json_path: Path | None = None) -> None:
     sample_df = df_claims.sample(n=sample_size, random_state=SEED).reset_index(drop=True)
 
     print("=" * 65)
-    print("AGENT QA: COLLECTION STAGE")
+    print("QA: COLLECTION STAGE")
     print("=" * 65)
     print(f"Population size: {pop_size} records")
     print(f"Sample size:     {sample_size} records (Seed: {SEED})")
@@ -116,7 +116,7 @@ def qa_collection(source_json_path: Path | None = None) -> None:
 
     # Markdown QA report
     md_content = [
-        "# Agent QA Report: Collection Stage",
+        "# QA Report: Collection Stage",
         "",
         f"- **Population size:** {pop_size} records",
         f"- **Sample size:** {sample_size} records (random_state={SEED})",
@@ -174,8 +174,8 @@ def qa_collection(source_json_path: Path | None = None) -> None:
         key_rows.append({
             "packet_id": pid,
             "sample_id": itm["sample_id"],
-            "agent_score": itm["score"],
-            "agent_reason": itm["reason"],
+            "qa_score": itm["score"],
+            "qa_reason": itm["reason"],
         })
 
     pd.DataFrame(blind_rows).to_csv(qa_dir / "blind_collection.csv", index=False)
@@ -204,7 +204,7 @@ def qa_coding_sheet() -> None:
     sampled_cids = random.sample(all_claim_ids, sample_size)
 
     print("=" * 65)
-    print("AGENT QA: CODING SHEET & CLAIM GROUPING STAGE")
+    print("QA: CODING SHEET & CLAIM GROUPING STAGE")
     print("=" * 65)
     print(f"Population size: {pop_size} distinct claim_ids ({len(sheet_df)} total records)")
     print(f"Sample size:     {sample_size} claim_ids (Seed: {SEED})")
@@ -248,7 +248,7 @@ def qa_coding_sheet() -> None:
     scores_dist = pd.Series([item["score"] for item in scored_items]).value_counts().to_dict()
 
     md_content = [
-        "# Agent QA Report: Coding Sheet & Claim Grouping",
+        "# QA Report: Coding Sheet & Claim Grouping",
         "",
         f"- **Population size:** {pop_size} distinct claims ({len(sheet_df)} rows)",
         f"- **Sample size:** {sample_size} distinct claims (random_state={SEED})",
@@ -305,8 +305,8 @@ def qa_coding_sheet() -> None:
             "packet_id": pid,
             "sample_id": itm["sample_id"],
             "claim_id": itm["claim_id"],
-            "agent_score": itm["score"],
-            "agent_reason": itm["reason"],
+            "qa_score": itm["score"],
+            "qa_reason": itm["reason"],
         })
 
     pd.DataFrame(blind_rows).to_csv(qa_dir / "blind_coding_sheet.csv", index=False)
@@ -349,7 +349,7 @@ def qa_model_errors(model_name: str | None = None) -> None:
     sample_df = claim_sample.sample(n=sample_size, random_state=SEED).reset_index(drop=True)
 
     print("=" * 65)
-    print(f"AGENT QA: MODEL ERRORS STAGE ({model_name})")
+    print(f"QA: MODEL ERRORS STAGE ({model_name})")
     print("=" * 65)
     print(f"Population size: {pop_size} claims")
     print(f"Sample size:     {sample_size} claims (Seed: {SEED})")
@@ -402,7 +402,7 @@ def qa_model_errors(model_name: str | None = None) -> None:
     scores_dist = pd.Series([item["score"] for item in scored_items]).value_counts().to_dict()
 
     md_content = [
-        f"# Agent QA Report: Model Errors Stage ({model_name})",
+        f"# QA Report: Model Errors Stage ({model_name})",
         "",
         f"- **Model:** `{model_name}`",
         f"- **Population size:** {pop_size} claims",
@@ -463,8 +463,8 @@ def qa_model_errors(model_name: str | None = None) -> None:
             "claim_id": itm["claim_id"],
             "gold": itm["gold"],
             "predicted": itm["predicted"],
-            "agent_score": itm["score"],
-            "agent_reason": itm["reason"],
+            "qa_score": itm["score"],
+            "qa_reason": itm["reason"],
             "failure_type": itm["failure_type"],
         })
 
@@ -477,7 +477,7 @@ def qa_model_errors(model_name: str | None = None) -> None:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Stage 5: Agent QA Qualitative Review.")
+    parser = argparse.ArgumentParser(description="Stage 5: QA Qualitative Review.")
     subparsers = parser.add_subparsers(dest="subcommand", required=True)
 
     col_p = subparsers.add_parser("collection", help="Run QA on collection stage.")

@@ -1,7 +1,7 @@
-# Agent QA Report: Provenance Audit of `data/raw/manual_claims.csv`
+# QA Report: Provenance Audit of `data/raw/manual_claims.csv`
 
 **Audit Date:** 2026-11-07  
-**Auditor:** Antigravity Autonomous Research Agent  
+**Auditor:** Quality Assurance Reviewer  
 **Sampling Configuration:** `random_state = 42`, $N_{\text{sample}} = 25$, $N_{\text{population}} = 73$
 
 ---

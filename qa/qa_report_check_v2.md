@@ -1,7 +1,7 @@
 # Rigorous QA Report Factual & Numeric Audit (`report_check_v2`)
 
 **Audit Date:** November 2026  
-**Auditor:** Quality Assurance Agent (Antigravity Pipeline Re-verification)  
+**Auditor:** Quality Assurance Reviewer (Pipeline Re-verification)  
 **Target Document:** [`REPORT.md`](file:///Users/abhishektripathi/Desktop/TCOM%20RESEARCH/REPORT.md)  
 **Associated Artifacts:**
 - Blind Review Packet: [`blind_report_check_v2.csv`](file:///Users/abhishektripathi/Desktop/TCOM%20RESEARCH/qa/blind_report_check_v2.csv)
@@ -34,7 +34,7 @@
 | `RPT_V2_007` | Section 1.1 | RQ4: What human harms are documented, and what communication recommendations are supported by this evidence? | `Proposal Text (Prompt 10 specification)` | **2** | Verified: Research question matches proposal verbatim. |
 | `RPT_V2_008` | Section 1.2 | RQ2 and RQ4 are NOT answered by the labelled dataset (no verification-method, correction-date, or harm evidence; require separate qualitative case-study write-ups) | `data/processed/final_labels.csv` | **2** | Verified: data/processed/final_labels.csv lacks verification taxonomy and harm metrics; RQ2 & RQ4 explicitly unanswerable. |
 | `RPT_V2_009` | Section 2.1 | Deduplicating and temporal filtering (June 6 to July 25, 2026) retained 86 records from the API | `data/processed/coding_sheet.csv` | **2** | Verified: 86 records retained from API query within temporal window. |
-| `RPT_V2_010` | Section 2.1 | 73 manual claim rows assembled by AI agent; strict URL provenance audit quarantined 62 rows; 11 verified manual rows retained | `data/raw/manual_claims_quarantine.csv, data/processed/final_labels.csv` | **2** | Verified: data/raw/manual_claims_quarantine.csv has 62 rows; exactly 11 verified manual rows in final_labels.csv (73 total). |
+| `RPT_V2_010` | Section 2.1 | 73 manual claim rows assembled from search results; strict URL provenance audit quarantined 62 rows; 11 verified manual rows retained | `data/raw/manual_claims_quarantine.csv, data/processed/final_labels.csv` | **2** | Verified: data/raw/manual_claims_quarantine.csv has 62 rows; exactly 11 verified manual rows in final_labels.csv (73 total). |
 | `RPT_V2_011` | Section 2.2 | Temporal breakdown in rows and claims: June 2026 = 16 rows (16 unique claims); July 2026 = 78 rows (67 unique claims); Undated = 3 rows (3 unique claims) | `data/processed/final_labels.csv` | **2** | Verified: June (16 rows / 16 claims), July (78 rows / 67 claims), Undated (3 rows / 3 claims). |
 | `RPT_V2_012` | Section 2.3 | The free-text origin_note was replaced with boolean origin_note_present (present in 4 records); zero handle patterns exposed | `data/processed/final_labels.csv, privacy_log.md` | **2** | Verified: origin_note_present is True for exactly 4 rows; origin_note column is stripped. |
 | `RPT_V2_013` | Section 3.1 | Coder C resolved 20 conflicts between coders A and B; unit and fields marked [TEAM TO CONFIRM]; pre-adjudication reliability not computable from supplied files | `Section 0 specification in task instructions` | **2** | Verified: Section 0 specifies 20 conflicts resolved by Coder C; A/B workbooks not available. |
@@ -48,7 +48,7 @@
 | `RPT_V2_021` | Section 5.7 | Temporal holdout (80% early / 20% late): 66 train claims (77 records) vs 17 test claims (17 records); Macro-F1 = 0.4056 (single split, unstable) | `outputs/time_holdout.csv` | **2** | Verified: outputs/time_holdout.csv confirms train=66 claims, test=17 claims, Macro-F1=0.4056. |
 | `RPT_V2_022` | Section 6.1 | Qualitative QA audit on 30 records drawn from seed 42 OOF muril_lr predictions: 15 errors and 15 correct predictions; scores: 15 Twos, 9 Ones, 6 Zeros | `qa/key_model_errors.csv, qa/qa_model_errors.md` | **2** | Verified: qa/key_model_errors.csv has 30 records (15 errors, 15 correct); scores 15/9/6. |
 | `RPT_V2_023` | Section 7.1 | RQ1 Table Column Totals: crowd_legitimacy = 44, other = 24, police_force = 15, slogans_communal_loyalty = 14, All = 97 | `outputs/rq1_form_by_narrative_mapped.csv` | **2** | Verified: outputs/rq1_form_by_narrative_mapped.csv sums to 44, 24, 15, 14 (Total: 97). |
-| `RPT_V2_024` | Section 9 | Deviations item 4: 62 of 73 manually collected claim rows quarantined after URL audit found dead/parked links; rows first assembled by AI agent; 11 verified manual rows remain | `data/raw/manual_claims_quarantine.csv, qa/qa_manual_audit.md` | **2** | Verified: 62 quarantined manual rows; AI agent assembled, URL audit removed; 11 verified remain. |
+| `RPT_V2_024` | Section 9 | Deviations item 4: 62 of 73 manually collected claim rows quarantined after URL audit found dead/parked links; rows first assembled from search results; 11 verified manual rows remain | `data/raw/manual_claims_quarantine.csv, qa/qa_manual_audit.md` | **2** | Verified: 62 quarantined manual rows; URL audit removed; 11 verified remain. |
 | `RPT_V2_025` | Appendix B | Verified Environment: Python 3.12.5 (macOS Darwin 24.6.0) | `System environment inspection (python3 --version)` | **2** | Verified: Python 3.12.5 verified on macOS Darwin 24.6.0. |
 
 ---

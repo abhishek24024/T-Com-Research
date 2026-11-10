@@ -22,12 +22,12 @@
 4. **Exclusivity of "other":**  
    Assign `other` **only** if the claim is on-topic but does not fit into any of the five defined substantive narrative categories. It must not be used as a convenient escape for ambiguous or complex claims.
 
-5. **Tie-Break Hierarchy [agent interpretation]:**  
+5. **Tie-Break Hierarchy:**  
    When a claim embodies multiple narrative elements (e.g., an allegation combining communal slurs and physical violence, or high-profile visitor presence combined with crowd estimates), apply the following hierarchical tie-break rules:
-   - **Rule T1 (Physical Violence over Ideological Framing) [agent interpretation]:** If a claim asserts an overt act of physical confrontation, bodily injury, homicide, or weapon deployment, classify as `protester_violence` (if attributed to protesters) or `police_force` (if attributed to police), even if communal or religious identities are mentioned (e.g., `R0025`).
-   - **Rule T2 (Specific State Brutality over Crowd Presence) [agent interpretation]:** If a visual depicts police lathi-charge or brutality against individuals at a rally, classify as `police_force`, not `crowd_legitimacy`.
-   - **Rule T3 (Named Organizer Conduct vs Collective Crowd) [agent interpretation]:** If a claim specifically targets the personal conduct, private morality, financial status, or personal background of a named individual protest organizer or public official (e.g., Abhijeet Dipke), classify as `individual_targeting`, even if the event occurred at the protest site. If the claim concerns anonymous protesters exhibiting collective behavior (e.g., dancing, kissing, crowd density), classify as `crowd_legitimacy` (e.g., `R0041`).
-   - **Rule T4 (Verbal Slogans & Foreign Backing) [agent interpretation]:** Allegations of anti-national chants, religious slogans, or foreign extremist endorsements without direct physical assaults classify as `slogans_communal_loyalty`.
+   - **Rule T1 (Physical Violence over Ideological Framing):** If a claim asserts an overt act of physical confrontation, bodily injury, homicide, or weapon deployment, classify as `protester_violence` (if attributed to protesters) or `police_force` (if attributed to police), even if communal or religious identities are mentioned (e.g., `R0025`).
+   - **Rule T2 (Specific State Brutality over Crowd Presence):** If a visual depicts police lathi-charge or brutality against individuals at a rally, classify as `police_force`, not `crowd_legitimacy`.
+   - **Rule T3 (Named Organizer Conduct vs Collective Crowd):** If a claim specifically targets the personal conduct, private morality, financial status, or personal background of a named individual protest organizer or public official (e.g., Abhijeet Dipke), classify as `individual_targeting`, even if the event occurred at the protest site. If the claim concerns anonymous protesters exhibiting collective behavior (e.g., dancing, kissing, crowd density), classify as `crowd_legitimacy` (e.g., `R0041`).
+   - **Rule T4 (Verbal Slogans & Foreign Backing):** Allegations of anti-national chants, religious slogans, or foreign extremist endorsements without direct physical assaults classify as `slogans_communal_loyalty`.
 
 6. **Documentary Evidence Only (No AI Speculation):**  
    Origin labels (`origin`) are recorded **only if the fact-check report explicitly provides documentary or forensic evidence**. Coders must never guess that text or media is AI-generated based on its appearance, smoothness, tone, or automated detector scores.

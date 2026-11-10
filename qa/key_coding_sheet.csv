@@ -1,4 +1,4 @@
-packet_id,sample_id,claim_id,agent_score,agent_reason
+packet_id,sample_id,claim_id,qa_score,qa_reason
 PKT_CS_01,CS_18,C0155,2,
 PKT_CS_02,CS_14,C0024,2,
 PKT_CS_03,CS_08,C0140,2,

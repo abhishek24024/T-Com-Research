@@ -1,4 +1,4 @@
-packet_id,sample_id,agent_score,agent_reason
+packet_id,sample_id,qa_score,qa_reason
 PKT_COL_01,COL_08,2,
 PKT_COL_02,COL_15,2,
 PKT_COL_03,COL_03,2,

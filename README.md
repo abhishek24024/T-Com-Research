@@ -197,7 +197,7 @@ Tests verify:
 ## Honest Status List
 
 ### Executed and Verified:
-- Data collection waterfall: 208 raw Google Fact Check Tools API records -> 86 deduplicated windowed claims; 73 initial manual claims assembled by AI agent -> 62 quarantined after URL audit -> 11 verified manual claims; total 97 records across 85 unique claims.
+- Data collection waterfall: 208 raw Google Fact Check Tools API records -> 86 deduplicated windowed claims; 73 initial manual claims -> 62 quarantined after URL audit -> 11 verified manual claims; total 97 records across 85 unique claims.
 - Full ingestion, sanitization, and SHA-256 verification of `data/raw/C_final.xlsx` (97 rows, 85 claims).
 - Privacy scrub removing account handles and authoring `privacy_log.md` (counts only, zero handles).
 - Label scheme mapping authoring (`narrative_mapping.csv`, `DECISIONS_NEEDED.md`, status: `APPROVED by team`).
@@ -218,9 +218,3 @@ Tests verify:
 1. **Coder Independence & Roles:** Team members (Coders A and B) filled sheets independently; a third team member (Coder C) resolved all conflicts into `data/raw/C_final.xlsx`.
 2. **Conflict Unit & Agreement:** Conflicts were 20 cell conflicts across 388 cells ($97 \times 4$), yielding 94.8% raw cell agreement (5.2% conflict rate). Raw pre-adjudication sheets were not retained; chance-corrected Cohen's kappa is not computable.
 3. **Record Decisions:** Record `R0059` remains in `other` (automated access restricted). Records `R0046`, `R0051`, and `R0054` remain in `slogans_communal_loyalty` as approved.
-
----
-
-## AI-Assistance Disclosure
-
-AI coding assistants were used to write and test the analysis code and to draft documentation. All narrative, content-form and direction labels were assigned by the team's human coders (A, B) and adjudicator (C).

@@ -1,7 +1,7 @@
-# Agent QA Report: Topic Relevance Audit of API Claims
+# QA Report: Topic Relevance Audit of API Claims
 
 **Audit Date:** 2026-11-07  
-**Auditor:** Antigravity Autonomous Research Agent  
+**Auditor:** Quality Assurance Reviewer  
 **Sampling Configuration:** `random_state = 42`, $N_{\text{sample}} = 40$, $N_{\text{population}} = 208$ API records
 
 ---

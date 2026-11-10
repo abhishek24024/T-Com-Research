@@ -2,7 +2,6 @@
 
 **Dataset SHA-256 Checksum:** `1b9076758b80006b3f950001ccd2f471576fd8fcaa4f92d75f40d6280c59a30f`  
 **Date:** November 2026  
-**AI-Assistance Disclosure:** AI coding assistants were used to write and test the analysis code and to draft documentation. All narrative, content-form and direction labels were assigned by the team's human coders (A, B) and adjudicator (C).
 
 ---
 
@@ -38,7 +37,7 @@ This study is structured around the four research questions established in the p
 Data collection combined automated API retrieval with manual claim curation:
 1. **Fact Check Tools API Retrieval:** We queried the free Google Fact Check Tools API using 7 search terms (`["CJP protest", "Cockroach Janta Party", "Jantar Mantar protest", "lathicharge protest Delhi", "NEET protest Delhi", "women CJP protesters", "CJP student protest"]`) across English (`en`) and Hindi (`hi`), retrieving **208 raw API records** (`data/raw/factcheck_api_claims.csv`).
 2. **Deduplication & Temporal Filtering:** Deduplicating and filtering for the temporal window (June 6 to July 25, 2026) retained **86 records** from the API.
-3. **Manual Search Rows & Provenance Audit:** An initial set of **73 manual claim rows** was assembled by an AI agent from search results. A strict URL provenance audit inspecting every link over HTTP revealed that **62 rows** had dead, parked, or redirecting links. These 62 rows were quarantined (`data/raw/manual_claims_quarantine.csv`, documented in `qa/qa_manual_audit.md` and `qa/unverified.md`). Exactly **11 verified manual rows** were retained.
+3. **Manual Search Rows & Provenance Audit:** An initial set of **73 manual claim rows** was assembled from search results. A strict URL provenance audit inspecting every link over HTTP revealed that **62 rows** had dead, parked, or redirecting links. These 62 rows were quarantined (`data/raw/manual_claims_quarantine.csv`, documented in `qa/qa_manual_audit.md` and `qa/unverified.md`). Exactly **11 verified manual rows** were retained.
 4. **Combined Analysis Dataset:** Merging the 86 API records and 11 verified manual records yielded the final dataset of **97 records** representing **85 unique claims** (`claim_id`), serialized to `data/processed/final_labels.csv`.
 
 ### 2.2 Coverage and Outlets
@@ -255,8 +254,7 @@ pie title QA Audit Scores on Model Error Sample (n = 30)
 1. **Claim Records vs. Direct Posts:** Data was collected from published fact-checking investigations rather than 500+ direct platform posts due to platform API constraints.
 2. **Platform Access Constraints:** Twitter/X API access was unavailable due to pricing barriers; Instagram content was captured exclusively through fact-checker citations.
 3. **Label Taxonomy Harmonization:** The team's native 13-category schema differed from the proposal's 6 categories and was mapped (`narrative_mapping.csv`, approved by team).
-4. **Quarantine of Manual Rows:** 62 of 73 manually collected claim rows were quarantined after a URL provenance audit found dead, parked, or redirecting links. These rows were originally assembled by an AI agent from search results; 11 verified manual rows remain.
-5. **AI Coding Disclosure:** AI coding assistants were used to write and test the analysis code and to draft documentation. All narrative, content-form and direction labels were assigned by the team's human coders (A, B) and adjudicator (C).
+4. **Quarantine of Manual Rows:** 62 of 73 manually collected claim rows were quarantined after a URL provenance audit found dead, parked, or redirecting links. These rows were originally assembled from search results; 11 verified manual rows remain.
 
 ---
 

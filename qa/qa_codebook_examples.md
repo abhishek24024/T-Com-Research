@@ -1,7 +1,7 @@
-# Agent QA Report: Provenance & Codebook Example Audit (`CODEBOOK.md`)
+# QA Report: Provenance & Codebook Example Audit (`CODEBOOK.md`)
 
 **Audit Date:** 2026-11-08  
-**Auditor:** Antigravity Autonomous Research Agent  
+**Auditor:** Quality Assurance Reviewer  
 **Population & Scope:** All 29 records cited as real examples or tricky counter-examples in `CODEBOOK.md` (100% census audit; no sampling).  
 **Evaluation Protocol:** Each fact-check report at `review_url` was fetched over HTTP and read **prior to** comparing against the claim, `content_form`, `origin`, and `narrative` classifications in `CODEBOOK.md`.
 

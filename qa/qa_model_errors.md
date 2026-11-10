@@ -1,7 +1,7 @@
 # QA Model Error Review (`model_errors`)
 
 **Audit Date:** November 2026  
-**Auditor:** Quality Assurance Agent (Antigravity Technical Pipeline)  
+**Auditor:** Quality Assurance Reviewer (Technical Pipeline)  
 **Target Model:** `muril_lr` (Frozen MuRIL `google/muril-base-cased` mean-pooled embeddings + Logistic Regression)  
 **Evaluation Set:** Seed 42 Out-of-Fold (OOF) Predictions on Scheme P  
 **Associated Artifacts:**

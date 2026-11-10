@@ -1,4 +1,4 @@
-# Agent QA Report: Coding Sheet & Claim Grouping
+# QA Report: Coding Sheet & Claim Grouping
 
 - **Population size:** 158 distinct claims (159 rows)
 - **Sample size:** 20 distinct claims (random_state=42)

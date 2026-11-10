@@ -1,4 +1,4 @@
-# Agent QA Report: Collection Stage
+# QA Report: Collection Stage
 
 - **Population size:** 208 records
 - **Sample size:** 20 records (random_state=42)
