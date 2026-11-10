@@ -1,0 +1,7 @@
+scheme,model,mean_paired_diff,std_paired_diff,fold_win_count,total_folds
+scheme_p,dummy_majority,0.0,0.0,0,25
+scheme_p,tfidf_char_lr,0.38,0.1235,25,25
+scheme_p,tfidf_wordchar_lr,0.3604,0.1467,25,25
+scheme_p,tfidf_char_surface_lr,0.3697,0.1318,25,25
+scheme_p,xlmr_lr,0.403,0.1464,25,25
+scheme_p,muril_lr,0.434,0.1369,25,25

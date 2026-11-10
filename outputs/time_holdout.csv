@@ -1,0 +1,2 @@
+model,train_claims,test_claims,macro_f1,status,note
+muril_lr,66,17,0.4056,"single split, unstable","feasibility pilot on documented claim records; single split, unstable"

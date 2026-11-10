@@ -1,0 +1,6 @@
+Timestamp: 2026-11-07T08:25:03.124676+00:00
+Terms: ["CJP protest", "Cockroach Janta Party", "Jantar Mantar protest", "lathicharge protest Delhi", "NEET protest Delhi", "women CJP protesters", "CJP student protest"]
+Languages: ["en", "hi"]
+Sites: []
+MaxAgeDays: 161
+------------------------------------------------------------

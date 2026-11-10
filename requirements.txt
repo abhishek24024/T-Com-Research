@@ -1,0 +1,13 @@
+# Claim-Narrative Triage Pipeline Requirements (Pinned Versions)
+# Python 3.12 verified environment
+pandas==2.2.3
+numpy==2.5.2
+scikit-learn==1.8.0
+torch==2.14.1
+transformers==5.22.2
+openpyxl==3.1.5
+matplotlib==3.11.2
+joblib==1.5.3
+pytest==9.2.0
+requests==2.32.3
+pillow==11.1.0

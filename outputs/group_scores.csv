@@ -1,0 +1,19 @@
+model,lang_group,n_rows,macro_f1,status
+dummy_majority,devanagari,14,,too few rows; describe errors qualitatively
+dummy_majority,english_likely,61,0.1685,scored
+dummy_majority,hinglish_likely,22,,too few rows; describe errors qualitatively
+tfidf_char_lr,devanagari,14,,too few rows; describe errors qualitatively
+tfidf_char_lr,english_likely,61,0.6829,scored
+tfidf_char_lr,hinglish_likely,22,,too few rows; describe errors qualitatively
+tfidf_wordchar_lr,devanagari,14,,too few rows; describe errors qualitatively
+tfidf_wordchar_lr,english_likely,61,0.6252,scored
+tfidf_wordchar_lr,hinglish_likely,22,,too few rows; describe errors qualitatively
+tfidf_char_surface_lr,devanagari,14,,too few rows; describe errors qualitatively
+tfidf_char_surface_lr,english_likely,61,0.5886,scored
+tfidf_char_surface_lr,hinglish_likely,22,,too few rows; describe errors qualitatively
+xlmr_lr,devanagari,14,,too few rows; describe errors qualitatively
+xlmr_lr,english_likely,61,0.5782,scored
+xlmr_lr,hinglish_likely,22,,too few rows; describe errors qualitatively
+muril_lr,devanagari,14,,too few rows; describe errors qualitatively
+muril_lr,english_likely,61,0.696,scored
+muril_lr,hinglish_likely,22,,too few rows; describe errors qualitatively

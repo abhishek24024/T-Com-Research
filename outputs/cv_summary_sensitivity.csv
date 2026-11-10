@@ -1,0 +1,7 @@
+scheme,model,mean_macro_f1,std_macro_f1,pooled_oof_macro_f1_seed42,n_rows,n_claims,n_splits
+sensitivity_no_related,xlmr_lr,0.5806,0.132,0.6256,93,82,5
+sensitivity_no_related,muril_lr,0.5675,0.1227,0.572,93,82,5
+sensitivity_no_related,tfidf_char_lr,0.5392,0.1188,0.5497,93,82,5
+sensitivity_no_related,tfidf_wordchar_lr,0.5209,0.142,0.5309,93,82,5
+sensitivity_no_related,tfidf_char_surface_lr,0.4862,0.102,0.4561,93,82,5
+sensitivity_no_related,dummy_majority,0.153,0.0054,0.153,93,82,5

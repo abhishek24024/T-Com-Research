@@ -1,0 +1,4 @@
+model_a,model_b,mean_paired_diff,std_paired_diff,model_a_wins,ties,model_b_wins,total_folds
+muril_lr,xlmr_lr,0.031,0.1311,16,1,8,25
+muril_lr,tfidf_char_lr,0.054,0.1041,18,0,7,25
+xlmr_lr,tfidf_char_lr,0.023,0.1159,15,1,9,25

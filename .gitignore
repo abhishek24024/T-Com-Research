@@ -1,0 +1,26 @@
+# Operating system and caches
+.DS_Store
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+env/
+venv/
+
+# Scratch directory
+scratch/
+
+# Temporary and backup files
+data/raw/backup/
+data/raw/pilot_*
+data/raw/coder_*
+data/processed/pilot_*
+data/processed/coder_*
+data/processed/coding_sheet_pre_merge.csv
+data/processed/pilot_template.csv
+data/processed/coder_template.csv
+test_dv.xlsx
+
+# Large embeddings cache
+outputs/.cache_embeddings/
+*.npy

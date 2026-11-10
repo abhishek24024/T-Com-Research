@@ -1,0 +1,5 @@
+model,class,precision,recall,f1,support
+tfidf_char_lr,crowd_legitimacy,0.717,0.8636,0.7835,44
+tfidf_char_lr,other,0.4091,0.375,0.3913,24
+tfidf_char_lr,police_force,0.5714,0.5333,0.5517,15
+tfidf_char_lr,slogans_communal_loyalty,0.625,0.3571,0.4545,14

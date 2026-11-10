@@ -1,0 +1,11 @@
+content_form_native,Communal / anti-national framing,Crowd size / legitimacy,Delegitimizing / mockery,Endorsement / solidarity claim,Fabricated casualties,Fabricated document / statement,Foreign / conspiracy link,Moral / cultural smear,Personal smear of leader,Police brutality / state repression,Political attack on govt/BJP,Pro-police counter-narrative,Protester violence / vandalism,All
+AI-generated image,0,1,1,1,4,0,2,1,0,0,1,0,0,11
+AI-generated video,0,2,0,0,0,0,0,0,0,0,1,0,0,3
+Deepfake,0,0,0,0,0,1,0,0,0,0,1,0,0,2
+Edited / cropped video,2,0,1,0,0,0,0,0,0,0,0,0,0,3
+Edited / fake image,0,0,0,0,0,0,0,0,2,0,0,0,0,2
+Fabricated document,0,0,0,0,0,1,2,0,0,0,0,0,0,3
+Misidentified person/video,0,0,0,5,0,0,0,0,5,1,0,0,0,11
+Old / recycled video,7,8,2,15,0,0,0,7,0,9,0,4,6,58
+Text / post only,0,0,0,0,1,0,1,0,0,0,1,0,1,4
+All,9,11,4,21,5,2,5,8,7,10,4,4,7,97

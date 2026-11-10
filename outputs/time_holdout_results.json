@@ -1,0 +1,8 @@
+{
+  "model": "muril_lr",
+  "train_claims": 66,
+  "test_claims": 17,
+  "macro_f1": 0.4056,
+  "status": "single split, unstable",
+  "note": "feasibility pilot on documented claim records; single split, unstable"
+}

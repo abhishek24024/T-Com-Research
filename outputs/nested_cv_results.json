@@ -1,0 +1,20 @@
+{
+  "nested_mean_macro_f1": 0.5251,
+  "nested_std_macro_f1": 0.1913,
+  "outer_fold_scores": [
+    0.5929,
+    0.4089,
+    0.7772,
+    0.5714,
+    0.275
+  ],
+  "outer_selected_models": [
+    "muril_lr",
+    "tfidf_char_lr",
+    "muril_lr",
+    "xlmr_lr",
+    "tfidf_wordchar_lr"
+  ],
+  "n_outer_folds": 5,
+  "n_inner_folds": 3
+}

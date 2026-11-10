@@ -1,0 +1,5 @@
+model,class,precision,recall,f1,support
+xlmr_lr,crowd_legitimacy,0.6981,0.8409,0.7629,44
+xlmr_lr,other,0.5,0.375,0.4286,24
+xlmr_lr,police_force,0.4286,0.4,0.4138,15
+xlmr_lr,slogans_communal_loyalty,0.6667,0.5714,0.6154,14

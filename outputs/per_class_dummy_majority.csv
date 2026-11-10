@@ -1,0 +1,5 @@
+model,class,precision,recall,f1,support
+dummy_majority,crowd_legitimacy,0.4536,1.0,0.6241,44
+dummy_majority,other,0.0,0.0,0.0,24
+dummy_majority,police_force,0.0,0.0,0.0,15
+dummy_majority,slogans_communal_loyalty,0.0,0.0,0.0,14

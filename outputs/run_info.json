@@ -1,0 +1,96 @@
+{
+  "dataset_sha256": "1b9076758b80006b3f950001ccd2f471576fd8fcaa4f92d75f40d6280c59a30f",
+  "n_rows": 97,
+  "n_claims": 85,
+  "classes_scheme_p": [
+    "crowd_legitimacy",
+    "other",
+    "police_force",
+    "slogans_communal_loyalty"
+  ],
+  "claims_per_class_scheme_p": {
+    "crowd_legitimacy": 35,
+    "other": 21,
+    "police_force": 15,
+    "slogans_communal_loyalty": 14
+  },
+  "rows_per_class_scheme_p": {
+    "crowd_legitimacy": 44,
+    "other": 24,
+    "police_force": 15,
+    "slogans_communal_loyalty": 14
+  },
+  "rare_merged_p": [
+    "individual_targeting",
+    "protester_violence"
+  ],
+  "rare_merged_n": [
+    "Delegitimizing / mockery",
+    "Fabricated casualties",
+    "Fabricated document / statement",
+    "Foreign / conspiracy link",
+    "Moral / cultural smear",
+    "Personal smear of leader",
+    "Political attack on govt/BJP",
+    "Pro-police counter-narrative",
+    "Protester violence / vandalism"
+  ],
+  "cv_seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "n_splits_used": 5,
+  "models_evaluated": [
+    "dummy_majority",
+    "tfidf_char_lr",
+    "tfidf_wordchar_lr",
+    "tfidf_char_surface_lr",
+    "xlmr_lr",
+    "muril_lr"
+  ],
+  "skipped_models": {},
+  "selected_model": {
+    "name": "muril_lr",
+    "mean_macro_f1": 0.59,
+    "assessment": "demonstrated advantage over dummy baseline"
+  },
+  "nested_cv": {
+    "nested_mean_macro_f1": 0.5251,
+    "nested_std_macro_f1": 0.1913,
+    "outer_fold_scores": [
+      0.5929,
+      0.4089,
+      0.7772,
+      0.5714,
+      0.275
+    ],
+    "outer_selected_models": [
+      "muril_lr",
+      "tfidf_char_lr",
+      "muril_lr",
+      "xlmr_lr",
+      "tfidf_wordchar_lr"
+    ],
+    "n_outer_folds": 5,
+    "n_inner_folds": 3
+  },
+  "time_holdout": {
+    "model": "muril_lr",
+    "train_claims": 66,
+    "test_claims": 17,
+    "macro_f1": 0.4056,
+    "status": "single split, unstable",
+    "note": "feasibility pilot on documented claim records; single split, unstable"
+  },
+  "libraries": {
+    "python": "3.12.5",
+    "pandas": "2.2.3",
+    "numpy": "2.5.2",
+    "scikit-learn": "1.8.0",
+    "joblib": "1.5.3"
+  },
+  "caveat": "feasibility pilot on documented claim records; scores are unstable and are not evidence that AI propaganda can be detected"
+}

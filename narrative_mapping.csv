@@ -1,0 +1,17 @@
+native_label,proposal_code,level,record_ids,rationale,status
+Endorsement / solidarity claim,crowd_legitimacy,category,all,"External VIP visits, solidarity statements, and endorsements supporting protest belong to crowd_legitimacy per Section 3.4 & Rule T3.1.",APPROVED by team
+Crowd size / legitimacy,crowd_legitimacy,category,all,"Drone visuals, crowd turnout estimates, and crowd authenticity belong to crowd_legitimacy per Section 3.4.",APPROVED by team
+Moral / cultural smear,crowd_legitimacy,category,all,"Anonymous participant conduct (kissing, dancing) framed to challenge crowd demeanor/seriousness belongs to crowd_legitimacy per Section 3.4 & Rule T3.2.",APPROVED by team
+Police brutality / state repression,police_force,category,all,"Allegations of unlawful physical violence, baton charges, or vehicle vandalism by police belong to police_force per Section 3.1.",APPROVED by team
+Fabricated casualties,police_force,category,all,Manufactured student deaths and severe ICU injuries resulting from police lathi-charge classify under police_force per Section 3.1.,APPROVED by team
+Communal / anti-national framing,slogans_communal_loyalty,category,all,"Allegations of anti-national chants, Islamic slogans, or sectarian loyalties without physical assault belong to slogans_communal_loyalty per Section 3.3 & Rule T4.",APPROVED by team
+Foreign / conspiracy link,slogans_communal_loyalty,category,all,"Manufactured links to foreign extremist organizations (Jamaat-e-Islami, foreign funding) belong to slogans_communal_loyalty per Section 3.3.",APPROVED by team
+Protester violence / vandalism,protester_violence,category,all,"Physical confrontation, sword-brandishing, vehicle arson, or stone pelting by protesters belong to protester_violence per Section 3.2 & Rule T1.",APPROVED by team
+Personal smear of leader,individual_targeting,category,all,"Personal conduct, private morality, or weight-gain smears targeting named organizer Abhijeet Dipke belong to individual_targeting per Section 3.5 & Rule T3.",APPROVED by team
+Pro-police counter-narrative,other,category,all,Civilian demonstrations and youth gatherings supporting police belong to other per Section 3.6 & tricky counter-example R0012/R0085.,APPROVED by team
+Political attack on govt/BJP,other,category,all,"Political attacks/satire against ministers (Piyush Goyal, Yogi Adityanath) not alleging police brutality belong to other per Section 3.6.",APPROVED by team
+Delegitimizing / mockery,crowd_legitimacy,row,R0016;R0074,Class 9 student gaffe on camera discrediting collective competence/seriousness of crowd per Rule T3.2.,APPROVED by team
+Delegitimizing / mockery,crowd_legitimacy,row,R0080,"False claim that authentic crowd photograph is AI-generated, attempting to diminish crowd turnout per Section 3.4.",APPROVED by team
+Delegitimizing / mockery,crowd_legitimacy,row,R0086,"Interview claim alleging professors forced students to join protest, challenging voluntariness/authenticity of crowd per Section 3.6 counter-example.",APPROVED by team
+Fabricated document / statement,other,row,R0027,Purported resignation letter of Dharmendra Pradhan is an administrative/policy rumor per Section 3.6 Real Example 1.,APPROVED by team
+Fabricated document / statement,other,row,R0059,"Fabricated official video statement attributed to Union Minister/Delhi Police falls under administrative/policy claims (Section 3.6), mapped to other (automated tools blocked).",APPROVED by team
